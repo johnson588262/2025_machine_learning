@@ -148,15 +148,24 @@ $$
 ## 問題二(b) Sigmoid function 跟 Hyperbolic function的關係
 令Sigmoid function 為 $\sigma(z)$ 
 $$
-\sigma(z) = \frac{1}{1+e^{-z}}
+\sigma(z) = \frac{1}{1+e^{-z}}.
 $$ 
 且 Hyperbolic function為 $tanh(z)$
 $$ 
-tanh(z)= \frac{e^z - e^{-z}}{e^z + e^{-z}}
+tanh(z)= \frac{e^z - e^{-z}}{e^z + e^{-z}}.
 $$
 對$\sigma(z)$分子分母同乘$e^{\frac{z}{2}}$:
 $$
 \begin{aligned}
-\sigma(z) &= \frac{}{}
+\sigma(z) &= \frac{e^\frac{z}{2}}{e^\frac{z}{2}+e^\frac{-z}{2}} \\
+          &= \frac{1}{2}( \frac{e^{z/2}+e^{-z/2}}{e^{z/2}+e^{-z/2}}+\frac{e^{z/2}-e^{-z/2}}{e^{z/2}+e^{-z/2}}) \\
+          &= \frac{1}{2}(1+\tanh(\frac{z}{2})).
 \end{aligned}
 $$
+由 $\sigma(z)= \frac{1}{2}(1+\tanh(\frac{z}{2}))$ 可知，Sigmoid Function 就是 Hyperbolic Function的平移縮放。
+
+## 問題三
+
+\[
+\text{Model: } h(x_1, x_2) = \sigma(b + w_1x_1 + w_2x_2), \quad \sigma(z) = \frac{1}{1+e^{-z}}.
+\] 

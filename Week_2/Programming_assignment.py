@@ -93,7 +93,7 @@ def minibatches(X, Y, batch=32, shuffle=True):
         j = idx[i:i+batch]
         yield X[j], Y[j]
 
-def train_model(h1=64, h2=64, epochs=1000, lr=1e-2, batch=32, patience=100, wd=1e-6):
+def train_model(h1=128, h2=128, epochs=4000, lr=1e-2, batch=16, patience=400, wd=1e-6):
     x_tr, y_tr, x_va, y_va = make_split()
     net = MLP(1, h1, h2, 1)
 

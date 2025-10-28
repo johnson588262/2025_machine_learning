@@ -246,3 +246,4 @@ $$
  **參考文獻：**
 - Hyvärinen, Aapo. “Estimation of non-normalized statistical models by score matching.” *Journal of Machine Learning Research*, 2005.  
 - Song, Yang & Ermon, Stefano. “Generative Modeling by Estimating Gradients of the Data Distribution.” *NeurIPS*, 2019.
+  

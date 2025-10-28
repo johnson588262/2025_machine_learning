@@ -236,8 +236,8 @@ $$
 
 | 類別 | 目標 | 損失形式 | 是否需真實 score | 應用 |
 |------|------|-----------|------------------|------|
-| ESM | 顯式匹配真實分佈的 score | $\mathbb{E}\|S - \nabla_x \log p\|^2$ | ✅ 需要 | 理論基礎 |
-| ISM | 用散度消去未知項 | $\mathbb{E}[\|S\|^2 + 2\nabla_x \cdot S]$ | ❌ 不需要 | 實際可行 |
+| ESM | 顯式匹配真實分佈的 score | $\mathbb{E}\|S - \nabla_x \log p\|^2$ |  需要 | 理論基礎 |
+| ISM | 用散度消去未知項 | $\mathbb{E}[\|S\|^2 + 2\nabla_x \cdot S]$ |  不需要 | 實際可行 |
 | Denoising Score Matching | 對加雜訊樣本進行訓練，讓模型學到「去雜訊方向」 |
 | Score-based Diffusion Model | 透過訓練時間依賴的 score function，實現由雜訊生成資料 |
 

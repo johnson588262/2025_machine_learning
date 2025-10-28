@@ -62,7 +62,7 @@
 
 ### 3.1 Training Process
 - 訓練與驗證 Loss 曲線
-![Figure_2](/Week_4/classfication%20final%20version/Figure_2.png)   
+![Figure_2](classfication_fig/Figure_2.png)   
 - Early stopping epoch 數: 1698。
 
 ### 3.2 Evaluation Metrics
@@ -71,9 +71,9 @@
 
 ### 3.3 Visualization
 - 混淆矩陣熱力圖 (Confusion Matrix Heatmap)。 
-![Figure_1](/Week_4/classfication%20final%20version/Figure_1.png) 
+![Figure_1](classfication_fig/Figure_1.png) 
 - ROC Curve 圖表與 AUC 指標。 
-![Figure_3](/Week_4/classfication%20final%20version/Figure_3.png)  
+![Figure_3](classfication_fig/Figure_3.png)  
 
 ---
 
@@ -143,7 +143,7 @@
 ## 3. Experiment & Results
 
 ### 3.1 損失曲線 (Loss Curve)
-![loss_curve](/Week_4/regression%20final%20version/Figure_1.png)  
+![loss_curve](regression_fig/Figure_1.png)  
 - 訓練 loss 隨 epoch 穩定下降  
 - 驗證 loss 約在 **0.07 ~ 0.09 Huber** 區間震盪，整體趨勢保持平穩  
 - 少量 overfitting 現象，但未導致效能大幅下降
@@ -151,14 +151,14 @@
 ---
 
 ### 3.2 預測結果 (y vs ŷ)
-![y_vs_yhat](/Week_4/regression%20final%20version/Figure_2.png)  
+![y_vs_yhat](regression_fig/Figure_2.png)  
 - 散點圖大多分布在對角線附近，顯示模型能正確擬合溫度  
 - 在極低溫 (<10°C) 與極高溫 (>28°C) 區域，仍存在較大誤差  
 
 ---
 
 ### 3.3 殘差分析 (Residuals)
-![residuals](/Week_4/regression%20final%20version/Figure_3.png)  
+![residuals](regression_fig/Figure_3.png)  
 - 殘差分布呈現近似常態，集中於 0 附近  
 - 大部分預測誤差落在 ±2°C 範圍內  
 - 少量長尾，顯示極端值仍較難擬合  

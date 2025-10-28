@@ -47,20 +47,20 @@ $$
 **函數近似** 
 - 網路能成功捕捉 Runge 函數中央峰值與整體形狀。
 - 在邊界處仍有誤差，但與理論上的 Runge 現象一致。
-![Figure_1](Figure_1.png)
+![Figure_1](Fig\Figure_1.png)
 
 **導數近似** 
 - 神經網路學到的 $f'(x)$ 與真實導數對比：
 - 中央區域（$x \approx 0$）的斜率近似效果良好。
 - 在邊界的振盪區域，誤差較大，但仍能捕捉到導數的正負與大致趨勢。
-![Figure_2](Figure_2.png)
+![Figure_2](Fig\Figure_2.png)
 
 **損失曲線** 
 - 訓練與驗證的 function loss、derivative loss 均隨 epoch
 收斂：
 - $L_{\text{func}}$ 與 $L_{\text{deriv}}$ 皆逐步下降。
 - validation 曲線趨於穩定，顯示網路有合理的泛化能力。
-![Figure_3](Figure_3.png)
+![Figure_3](Fig\Figure_3.png)
 **誤差**
 - Function MSE on dense grid:
 2.495228e-07

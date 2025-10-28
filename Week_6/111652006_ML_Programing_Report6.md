@@ -102,7 +102,7 @@ $$
 - 決策邊界：幾乎為直線  
 - 視覺化結果如下：  
 
-![LDA boundary](Figure_1.png)
+![LDA boundary](Fig\Figure_1.png)
 
 可見邊界呈現線性，左上角有一大片淺藍外推區，模型對外海與陸地的分界不夠準確。
 
@@ -115,7 +115,7 @@ $$
 - 決策邊界：明顯為橢圓形曲線，貼合資料分佈  
 - 視覺化結果如下：
 
-![QDA boundary](Figure_2.png)
+![QDA boundary](Fig\Figure_2.png)
 
 模型能更準確地分出台灣本島（Class 1）與外海（Class 0）區域。
 
@@ -228,7 +228,7 @@ $$
 |------|------|
 | Accuracy | **0.833** |
 
-![QDA Decision Boundary](qda_boundary.png)
+![QDA Decision Boundary](Fig\qda_boundary.png)
 
 > 橘色為 Class 1（陸地），藍色為 Class 0（海域）。  
 > QDA 能準確地捕捉非線性邊界，台灣本島形狀清晰，分類準確率高。
@@ -243,7 +243,7 @@ $$
 | MAE  | **4.493** |
 | R²   | **0.070** |
 
-![Linear Regression Scatter](regression_scatter.png)
+![Linear Regression Scatter](Fig\regression_scatter.png)
 
 > 線性回歸模型僅以經緯度預測氣溫，結果顯示線性關係較弱，  
 > 預測值多集中在平均溫度附近，解釋力（R²）較低。
@@ -252,7 +252,7 @@ $$
 
 **組合模型 $h(x)$：**
 
-![Combined Piecewise Model h(x)](h_grid.png)
+![Combined Piecewise Model h(x)](Fig\h_grid.png)
 
 > 紫色區域代表 $C(x)=0$（海上，輸出 −999），  
 > 黃色區域代表 $C(x)=1$（陸地，輸出 $R(x)$ 的預測值）。  

@@ -90,17 +90,5 @@ $$
 
 在 **score-based / diffusion** 生成模型中：
 - 正向過程用 SDE 把資料逐步加噪，趨近高斯；
-- 反向過程可由 **reverse-time SDE** 生成資料：
-
-  $$
-  dx = \big[f(x,t) - g(t)^2\,\nabla_x \log p_t(x)\big]dt + g(t)\,d\bar{w}_t,
-  $$
-
-  以學得的 score $S(x,t)\approx\nabla_x\log p_t(x)$ 取代未知真值即可取樣；  
-- 亦可用對應的 **probability flow ODE**
-
-  $$
-  dx = \big[f(x,t) - \tfrac{1}{2}g(t)^2\,S(x,t)\big]dt
-  $$
-  
-  進行確定性（無噪）生成。
+- 反向過程可由 **reverse-time SDE** 生成資料： $dx_t = \big[f(x_t,t) - g(x_t,t)^2\,\nabla_x \log p_t(x)\big]dt + g(x_t,t)\,d\bar{W}_t,$ 以學得的 score $S(x,t)\approx\nabla_x\log p_t(x)$ 取代未知真值即可取樣；  
+- 亦可用對應的 **probability flow ODE** $dx = \big[f(x_t,t) - \tfrac{1}{2}g(x_t,t)^2\,S(x,t)\big]dt$ 進行確定性（無噪）生成。

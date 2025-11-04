@@ -32,9 +32,9 @@
 ### 證明的一些重點
 1. **中心差分運算子 (central finite difference)**  
    對函數 $f$ 定義
-   
+
 $$
-\delta_h^p[f](x) = \sum_{i=0}^p (-1)^i \binom{p}{i} f\!\Big(x + \Big(\tfrac{p}{2}-i\Big)h\Big).
+\delta_h^p\[f\](x) = \sum_{i=0}^p (-1)^i \binom{p}{i} f\!\Big(x + \Big(\tfrac{p}{2}-i\Big)h\Big).
 $$
    
    因為那個 $(-1)^i$ 的存在，所以把 $f$ 泰勒展開時會消掉 $f$ 的低階項( $\sum_{i=0}^p (-1)^i \binom{p}{i} \left(\tfrac{p}{2}-i\right)^m$ )，留下與 $f^{(p)}(0)$ 成正比的項。

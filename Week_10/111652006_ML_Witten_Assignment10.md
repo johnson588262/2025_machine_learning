@@ -9,8 +9,7 @@ $$
 
 $$
 \frac{\partial}{\partial t} p(x,t)
-= -\frac{\partial}{\partial x}\big(f(x,t)\,p(x,t)\big)
-+ \frac{1}{2}\frac{\partial^2}{\partial x^2}\big(g^2(x,t)\,p(x,t)\big).
+=-\frac{\partial}{\partial x}\big(f(x,t)\,p(x,t)\big)+\frac{1}{2}\frac{\partial^2}{\partial x^2}\big(g^2(x,t)\,p(x,t)\big).
 $$
 
 另一方面，若存在一條 **probability flow ODE**：
@@ -63,10 +62,7 @@ $$
 
 $$
 dx_t =
-\Big[
-f(x_t,t)
--\frac{1}{2}\frac{\partial}{\partial x}g^2(x_t,t)
--\frac{g^2(x_t,t)}{2}\,\frac{\partial}{\partial x}\log p(x_t,t)
+\Big[f(x_t,t) -\frac{1}{2}\frac{\partial}{\partial x}g^2(x_t,t) -\frac{g^2(x_t,t)}{2}\,\frac{\partial}{\partial x}\log p(x_t,t)
 \Big]\,dt.
 $$
 
@@ -75,8 +71,7 @@ $$
 
 $$
 \partial_t p
-= -\nabla\!\cdot\!(f\,p)
-+ \tfrac{1}{2}\sum_{i,j}\partial_{x_i x_j}\!\big((GG^\top)_{ij}\,p\big),
+=-\nabla\!\cdot\!(f\,p)+\tfrac{1}{2}\sum_{i,j}\partial_{x_i x_j}\!\big((GG^\top)_{ij}\,p\big),
 $$
 
 若 $G(x,t)=g(x,t)I$ ，則
